@@ -34,37 +34,77 @@ header{
     }
 }
 
-main{
-    & .home{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 680px; 
-        margin-left: 120px;
-        margin-top: 171px;
-        gap: 30px;
+main {
+  .home {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    margin: 171px 120px;
+    gap: 50px;
 
-        & h1{
-            font-size:70px;
-        }
+    .text {
+      max-width: 680px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
 
-        & p{
-            color: #1F1F39B2;
-            font-size:28px;
-        }
+      h1 {
+        font-size: 70px;
+      }
 
-        & a{
-            background-color: #1F1F39;
-            text-align: center;
-            font-weight: bold;
-            font-size:24px;
-            color: white;
-            padding: 35px;
+      p {
+        color: #1F1F39B2;
+        font-size: 28px;
+      }
+
+      a {
+        background-color: #1F1F39;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+        padding: 20px 35px;
+        border-radius: 8px;
+        width: fit-content;
+      }
+    }
+
+    .ImgHome img {
+      max-width: 417px;
+      height: auto;
+    }
+  }
+
+  .Portifolio {
+    & .in{
+        font-size: 40px;
+    }
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+
+
+
+    & .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 109px 368px;
+        padding-top: 109px;
+        
+        & .card1, .card2, .card3, .card4, .card5, .card6{
+            display: flex;
+            flex-direction: column;
+            max-width: 416px;
+            font-size: 28px;
+
+            & img{
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            }
         }
     }
-    
-}
-
-.ImgHome{
-    
+  }
 }
